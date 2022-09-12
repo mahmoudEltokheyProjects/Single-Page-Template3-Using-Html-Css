@@ -1,0 +1,1333 @@
+* , *:after , *:before
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	font-family: Arial;
+}
+/* /////////////////////////////////////////// home section ////////////////////////////////////////// */
+.homeClass
+{
+	width: 100%;
+	height:auto;
+	/* border: 2px solid #f00; */
+	/* home section بتاع ال width من ضمن ال  padding , border  عشان مخلهوش يحسب ال */
+    box-sizing: border-box;
+	padding: 10px;
+	background-image: url("../images/Egypt_by_kupo707.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.homeClass .homeContainer
+{
+	width: 75%;
+	height: auto;
+	margin: 200px auto;
+	/* border: 2px solid #0f0; */
+	text-align: center;
+}
+.homeClass .homeContainer .homeH2
+{
+	width: 85%;
+	height: auto;
+	margin: auto;
+	padding:3%;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	font-size: 40px;
+	color: #fff;
+	margin-bottom:70px;
+}
+.homeClass .homeContainer .learnMoreBtn
+{
+	width:150px;
+	height:50px;
+	padding:10px;
+	color:#fff;
+	border:2px solid #fff;
+	outline: 0 ;
+	background:0;
+	text-transform: capitalize;
+	font-size: 20px;
+	cursor: pointer;
+}
+/* ////////////////////////////////////////// navbar section ////////////////////////////////////////// */
+.navbarClass
+{
+	width: 100%;
+	height: auto;
+	/* border: 2px solid #0f0; */
+	background-color: #252f31;
+	padding-top:1%;
+	padding-bottom:1%;
+	box-sizing: border-box;
+	position: relative;
+}
+.navbarClass .navbarContainer
+{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	/*
+	border: 2px solid #00f;	
+	box-sizing: border-box;
+	*/
+}
+.navbarClass .navbarContainer .logo
+{
+	width: 50%;
+	float: left;
+	/*
+	border:2px solid #0ff;	
+	box-sizing: border-box;
+	*/
+	color: #fff;
+}
+.navbarClass .navbarContainer .logo .logoH2
+{
+	text-transform: uppercase;
+	font-size:40px;
+	margin-top: 10px;	
+}
+.navbarClass .navbarContainer .logo .logoH2 .logoSpan
+{
+	margin-left:10px;
+	color:#2ecc71;
+}
+.navbarClass .navbarContainer .links
+{
+	width: 50%;
+	float: left;
+	/*
+	border: 2px solid #f0f;
+	box-sizing: border-box;
+	*/
+	padding-top:1%;
+	padding-bottom:1%;
+}
+.navbarClass .navbarContainer .links .ul-list
+{
+	display: block;
+	list-style: none;
+}
+.navbarClass .navbarContainer .links .ul-list li
+{
+	display: inline-block;
+	margin-top: 10px;	
+}
+.navbarClass .navbarContainer .links .ul-list li a
+{
+	text-decoration: none;
+	text-transform: capitalize;
+	color:#fff;
+	display: block;
+	/*
+	border: 2px solid #0ff;
+	box-sizing: border-box;
+	*/
+	font-size: 15px;
+    padding:5px 5px; 
+	transition: 0.3s ease-in-out;
+}
+.navbarClass .navbarContainer .links .ul-list li a.active
+{
+	color:#30B576;
+}
+.navbarClass .navbarContainer .links .ul-list li a:hover
+{
+	background-color:#30B576;
+	color:#000;
+}
+
+.navbarClass .navbarContainer .inputClass ,
+.navbarClass .navbarContainer .labelClass
+{
+	position: absolute;
+	top:10px;
+	right:10px;
+}
+.navbarClass .navbarContainer .inputClass 
+{
+	display: none;
+}
+.navbarClass .navbarContainer .labelClass
+{
+	width:50px;
+	height: 50px;
+	background-image: url("../images/open.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+.navbarClass .navbarContainer .inputClass:checked ~ .labelClass
+{
+	background-image: url("../images/close.png");
+}
+.navbarClass .navbarContainer .inputClass:checked ~ .links .ul-list
+{
+	display: block;
+	text-align: center;
+}
+/* /////////////////////////////////////////// blog section ////////////////////////////////////////// */
+.blogClass
+{
+	width: 100%;
+	height: auto;
+	/* border: 2px solid #f00; */
+	padding: 5px;
+	box-sizing: border-box;
+	background-color: #eb5424;
+}
+.blogClass  .blogContainer
+{
+	width:95%;
+	height: auto;
+	margin:30px auto;
+	overflow: hidden;
+	/* border: 2px solid #0f0; */
+	padding: 20px;
+	box-sizing: border-box;
+}
+.blogClass  .blogContainer .blog1 , 
+.blogClass  .blogContainer .blog2 , 
+.blogClass  .blogContainer .blog3  
+{
+	width:30.33%;
+	float: left;
+	height: auto;
+	margin-left:2%;
+	padding: 20px;
+	/* border: 2px solid #00f; */
+	box-sizing: border-box;
+	background-color: #ccc;
+}
+.blogClass  .blogContainer .blog1 h2 , 
+.blogClass  .blogContainer .blog2 h2 , 
+.blogClass  .blogContainer .blog3 h2
+{
+	color:#555;
+	text-transform: uppercase;
+	font-size:30px;
+	font-weight: normal;
+}
+.blogClass  .blogContainer .blog1 p , 
+.blogClass  .blogContainer .blog2 p , 
+.blogClass  .blogContainer .blog3 p
+{	
+	color:#888;
+	font-size: 15	px;
+	padding-top:5%;
+	padding-bottom:5%;
+}
+/* /////////////////////////////////////////// about me section ////////////////////////////////////////// */
+.aboutClass
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	/* border: 2px solid #ff0; */
+	box-sizing: border-box;
+	background-color: #ddd;
+}
+/* left part of about section : about image , right part of about section : about info [ header , paragraph , fields ]   */
+.aboutClass .aboutImg , 
+.aboutClass	.aboutInfo
+{
+	float: left;
+	height:auto;
+	overflow: hidden;
+}
+/* left part of about section : about image  */
+.aboutClass .aboutImg
+{
+	width: 40%;
+}
+.aboutClass .aboutImg img
+{
+	width: 100%;
+	/* border:2px solid #0f0; */
+	box-sizing: border-box;
+}
+/* right part of about section : about info [ header , paragraph , fields ]   */
+.aboutClass	.aboutInfo
+{
+	width: 60%;
+	/* border: 2px solid #f0f; */
+	box-sizing: border-box;	
+	padding: 3.3%;
+}
+.aboutClass	.aboutInfo h2
+{
+	text-transform: capitalize;
+	font-size:35px;
+	color:#555;
+	margin-bottom:2%;
+	font-weight: normal;
+}
+.aboutClass	.aboutInfo .aboutPara1 , 
+.aboutClass	.aboutInfo .aboutPara2
+{
+	color:#999;
+	margin-bottom:3%;
+	font-size: 15px;
+}
+/* right part : fields  of right part of about section  */
+.aboutInfoFields
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	/* border: 2px solid #f00; */
+	box-sizing: border-box;
+}
+/* common properities of the four fields */
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 
+{
+	width: 50%;
+	float: left;
+	/* border: 2px solid #ff0; */
+	box-sizing: border-box;
+}
+/* common properities of the four sub-fields */
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 .about-subField1 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 .about-subField2 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 .about-subField3 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 .about-subField4
+{
+	width: 100%;
+}
+/* common properities of the four icons of the four fields */
+/* first part :  icons of about fields */
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 i , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 i , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 i , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 i
+{
+	width: 20%;
+	float: left;
+	color:#000;
+	margin-top:4%;
+}
+/* common properities of the  four h4 of the four sub-fields */
+/* second part :  sub-fields of about fields */
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 .about-subField1  , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 .about-subField2  , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 .about-subField3  , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 .about-subField4 
+{
+	width: 80%;
+	float: left;
+	padding:10px;
+	box-sizing: border-box;
+}
+/* common properities of the four h4 of the four sub-fields */
+/* sub-fields p */
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 .about-subField1 h4 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 .about-subField2 h4 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 .about-subField3 h4 , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 .about-subField4 h4 
+{
+	color:#666;
+	text-transform: uppercase;
+	font-size:19px;
+	margin-bottom:3%;
+}
+/* common properities of the four p of the four sub-fields */
+/* sub-fields p */
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 .about-subField1 p , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 .about-subField2 p , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 .about-subField3 p , 
+.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 .about-subField4 p  
+{
+	display: block;
+	float: none;
+	width: 100%;
+	color:#888;
+}
+/* /////////////////////////////////////////// my skills section //////////////////////////////////////// */
+.mySkills
+{
+	width: 100%;
+	height: auto;
+	/*
+		border: 2px solid #f00;
+		box-sizing: border-box;
+	*/
+	/*  margin: top right bottom left  */
+}
+.mySkills .skillsContainer
+{
+	width:100%;
+	height: auto;
+	padding:50px;
+	overflow: hidden;
+	/* border: 2px solid #0f0; */
+	box-sizing: border-box;
+}
+/* common properities of left and right part of skills section : skills information and skills-statistics */
+.mySkills .skillsContainer  .skills-info ,
+.mySkills .skillsContainer  .skills-statistics
+{
+	width: 50%;
+	height: auto;
+	float: left;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+/* left part of skills section : skills information */
+.mySkills .skillsContainer  .skills-info
+{
+	/*
+	border: 2px solid #000;	
+	box-sizing: border-box;
+	*/
+}
+/* header of left part of skills section : skills information */
+.mySkills .skillsContainer  .skills-info h2
+{
+	text-transform: uppercase;
+	font-size: 35px;
+	color:#555;
+	font-weight: normal;
+	margin-bottom: 2%;
+}
+/* common properities of first and second paragraph of left part of skills section : skills information */
+.mySkills .skillsContainer  .skills-info .skillsPara1 ,
+.mySkills .skillsContainer  .skills-info .skillsPara2
+{
+	font-size:15px;
+	color:#777;
+}
+/* first paragraph of left part of skills section : skills information */
+.mySkills .skillsContainer  .skills-info .skillsPara1
+{
+	margin-bottom: 5%;	
+}
+/* button of left part of skills section : skills information */
+.mySkills .skillsContainer  .skills-info .skillsBtn
+{
+	display: block;
+	width:150px;
+	height: 50px;
+	padding: 10px;
+	background: none;
+	border:3px solid #2DCC70;
+	box-sizing: border-box;
+	font-weight: bold;
+	color:#2DCC70;
+	text-transform: capitalize;
+	font-size: 15px;
+	margin-top:10%;
+	cursor: pointer;
+	outline: 0;
+	transition: 0.3s ease-in-out;
+}
+/* hover on button of left part of skills section : skills information */
+.mySkills .skillsContainer  .skills-info .skillsBtn:hover
+{
+	color:#fff;
+	background-color: #2DCC70;
+}
+/* right part of skills section : skills statistics */
+.mySkills .skillsContainer  .skills-statistics
+{
+	/*
+	border: 2px solid #00f;
+	*/
+	box-sizing: border-box;
+	padding-left:5%;
+}
+/* header of the right part of skills section : skills statistics */
+.mySkills .skillsContainer  .skills-statistics h3
+{
+	display: block;
+	width: 100%;
+	font-size: 25px;
+	text-transform: capitalize;
+	margin-bottom:1%;
+	font-weight: normal;
+	color:#555;
+}
+
+/* common properities div of bar of the right part of skills section : skills statistics */
+.mySkills .skillsContainer  .skills-statistics  .photoShopContainer 	.photoShopBar 	 ,
+.mySkills .skillsContainer  .skills-statistics  .illustratorContainer   .illustratorBar  ,
+.mySkills .skillsContainer  .skills-statistics  .htmlContainer		 	.htmlBar		 ,
+.mySkills .skillsContainer  .skills-statistics  .phpContainer 			.phpBar 
+{
+	position: relative;
+	width:100%;	
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:10px;
+	background-color:#ccc;
+	margin-bottom:3%;
+
+}
+/* ********** common properities of spanBar of the right part of skills section : skills statistics ***************** */
+/* ------- first bar : photoshop percentage and bar ------- */
+.mySkills .skillsContainer  .skills-statistics  .photoShopContainer .photoShopBar .percentagePhotoShopSpan ,
+.mySkills .skillsContainer  .skills-statistics  .photoShopContainer .photoShopBar .photoShopBarSpan ,
+/* ------- second bar : illustrator ------- */
+.mySkills .skillsContainer  .skills-statistics  .illustratorContainer .illustratorBar .percentageIllustratorSpan  ,
+.mySkills .skillsContainer  .skills-statistics   .illustratorContainer .illustratorBar .illustrtorBarSpan ,
+/* ------- third bar : html/css ------- */
+.mySkills .skillsContainer  .skills-statistics  .htmlContainer .htmlBar .percentageHtmlSpan ,
+.mySkills .skillsContainer  .skills-statistics  .htmlContainer .htmlBar .htmlBarSpan,
+/* ------- fourth bar : html/css ------- */
+.mySkills .skillsContainer  .skills-statistics   .phpContainer  .phpBar .percentagePhpSpan  ,
+.mySkills .skillsContainer  .skills-statistics   .phpContainer   .phpBar  .phpBarSpan
+{
+	position: absolute;
+	/* ‘شان ياخذ ارتفاع البار كله وميخرجش بره الحدود بتاع البار */
+	top:0;
+	bottom: 0;
+}
+/* ********** common properities of green Bar of the three bars of the right part of skills section : skills statistics ***************** */
+.mySkills .skillsContainer  .skills-statistics   .photoShopContainer 	    .photoShopBar   		 .photoShopBarSpan  ,
+.mySkills .skillsContainer  .skills-statistics   .illustratorContainer		.illustratorBar 		 .illustrtorBarSpan ,
+.mySkills .skillsContainer  .skills-statistics   .htmlContainer 			.htmlBar 				 .htmlBarSpan 		,
+.mySkills .skillsContainer  .skills-statistics   .phpContainer  			.phpBar  				 .phpBarSpan
+{	
+	/* يبدا من بداية الناحية الشمال green bar عشان ال */
+	left: 0;
+	background-color: #2DCC70; 
+}
+/* -------------------- first bar for photoshop -------------------- */
+/* percentage span of photoshop */
+.mySkills .skillsContainer  .skills-statistics  .photoShopContainer .photoShopBar .percentagePhotoShopSpan 
+{
+	right:60%;
+	color: #fff;
+}
+/* green bar of photoshop */
+.mySkills .skillsContainer  .skills-statistics  .photoShopContainer .photoShopBar .photoShopBarSpan
+{
+	width: 40%;
+}
+/* -------------------- second bar for photoshop -------------------- */
+/* percentage span of illustrator */
+.mySkills .skillsContainer  .skills-statistics  .illustratorContainer .illustratorBar .percentageIllustratorSpan 
+{
+	right:30%;
+	color: #fff;
+}
+/* green bar of photoshop */
+.mySkills .skillsContainer  .skills-statistics  .illustratorContainer .illustratorBar .illustrtorBarSpan
+{
+	width: 70%;
+}
+/* -------------------- third bar for html -------------------- */
+/* percentage span of hyml */
+.mySkills .skillsContainer  .skills-statistics  .htmlContainer .htmlBar .percentageHtmlSpan 
+{
+	right:20%;
+	color: #fff;
+}
+/* green bar of photoshop */
+.mySkills .skillsContainer  .skills-statistics   .htmlContainer .htmlBar  .htmlBarSpan
+{
+	width:80%;
+}
+/* -------------------- fourth bar for php -------------------- */
+/* percentage span of php */
+.mySkills .skillsContainer  .skills-statistics   .phpContainer  .phpBar .percentagePhpSpan 
+{
+	right:10%;
+	color: #fff;
+}
+/* green bar of photoshop */
+.mySkills .skillsContainer  .skills-statistics   .phpContainer   .phpBar  .phpBarSpan
+{
+	width: 90%;
+}
+/* ///////////////////////////////////////////resume section //////////////////////////////////////// */
+.resume
+{
+	width: 100%;
+	height: auto;
+	/* border: 2px solid #f00; */
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #ddd;
+	padding:2% 15%;
+}
+.resume h2
+{
+	text-transform: capitalize;
+	font-weight: bold;
+	color:#888;
+	font-size:40px;
+	margin-bottom: 3%;
+}
+.resume p
+{
+	margin-bottom:4%;
+	line-height: 1.5;
+	font-size: 20px;
+	color:#bbb;
+}
+.resume button
+{
+	display: block;
+	width: 190px;
+	height: 50px;
+	margin: auto;
+	border: 2px solid #2DCC70;
+	padding: 10px;
+	background-color:none;
+	color:#2DCC70;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline:0;
+	transition: 0.3s ease-in-out;
+}
+.resume button:hover
+{
+	color:#fff;
+	background-color:#2DCC70;
+}
+/* /////////////////////////////////////////////////////////// Education section ///////////////////////////////////////////////////////////// */
+.myEducation
+{
+	width: 100%;
+	height: auto;
+	/* border: 2px solid #f00; */
+	border-bottom: 1px solid #555;
+	padding-top:30px;
+    padding-bottom:30px;
+	box-sizing: border-box;
+}
+.myEducation .myEducationContainer
+{
+	width: 95%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	/* border: 2px solid #0f0; */
+	box-sizing: border-box;
+	
+}
+/* common properities of the left and right part of my Education section */
+.myEducation .myEducationContainer .myEducation-info , 
+.myEducation .myEducationContainer .education-fields
+{
+	width: 50%;
+	float: left;
+}
+
+/* ------------ h2 of  left part of my education  ------------------- */
+.myEducation .myEducationContainer .myEducation-info .educationInfoH2
+{
+	text-transform: capitalize;
+	font-size: 35px;
+	color:#666;
+	margin-bottom:3%;
+	font-weight: normal;
+}
+/* ------------ first paragraph of  left part of my education  ------------------- */
+.myEducation .myEducationContainer .myEducation-info .educationInfoPara1 ,
+.myEducation .myEducationContainer .myEducation-info .educationInfoPara2
+{
+	margin-bottom: 5%;
+	font-size: 15.5px;
+	color:#888;
+}
+.myEducation .myEducationContainer .education-fields
+{
+	padding-top:45px;
+	padding-left:20px;
+	box-sizing: border-box;
+}
+.myEducation .myEducationContainer .education-fields .field1
+{
+	
+}
+.myEducation .myEducationContainer .education-fields .field1 .field1H2 ,
+.myEducation .myEducationContainer .education-fields .field2 .field2H2
+{
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 8px;
+}
+.myEducation .myEducationContainer .education-fields .field1 .field1Date ,
+.myEducation .myEducationContainer .education-fields .field2 .field2Date
+{
+	color: #bbb;
+	margin-bottom: 8px;	
+}
+.myEducation .myEducationContainer .education-fields .field1 .field1Date span ,
+.myEducation .myEducationContainer .education-fields .field2 .field2Date span
+{
+	color: #444;
+}
+
+.myEducation .myEducationContainer .education-fields .field1 .field1Para ,
+.myEducation .myEducationContainer .education-fields .field2 .field2Para
+{
+	margin-top: 20px;
+	margin-bottom:40px;
+	color:#888;
+	line-height: 1.5;
+}
+.myEducation .myEducationContainer .education-fields .field1 button ,
+.myEducation .myEducationContainer .education-fields .field2 button 
+{
+	width: 80px;
+	height:35px;
+	padding:8px;
+	margin-bottom:15px;
+	background-color: #2DCC70;
+	color: #fff;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+.myEducation .myEducationContainer .education-fields .field1 button:hover ,
+.myEducation .myEducationContainer .education-fields .field2 button:hover
+{
+	border: 2px solid #2DCC70;
+	box-sizing: border-box;
+	color: #2DCC70;
+	background: none;
+}
+.myEducation .myEducationContainer .education-fields .field1Para
+{
+	margin-top:15px;
+}
+/* /////////////////////////////////////////////////////////// work Experience section ///////////////////////////////////////////////////////////// */
+.workExperience
+{
+	width: 100%;
+	height: auto;
+	/* border: 2px solid #f00; */
+	border-bottom: 1px solid #555;
+	padding-top:30px;
+    padding-bottom:30px;
+	box-sizing: border-box;
+}
+.workExperience .workExperienceContainer
+{
+	width: 95%;
+	height: auto;
+	margin: auto;
+	overflow: hidden;
+	/* border: 2px solid #00f; */
+	box-sizing: border-box;
+	
+}
+/* common properities of the left and right part of my Education section */
+.workExperience .workExperienceContainer .workExperience-info , 
+.workExperience .workExperienceContainer .experience-fields
+{
+	width: 50%;
+	float: left;
+}
+
+/* ------------ h2 of  left part of my education  ------------------- */
+.workExperience .workExperienceContainer .workExperience-info .experienceInfoH2
+{
+	text-transform: capitalize;
+	font-size: 35px;
+	color:#666;
+	margin-bottom:3%;
+	font-weight: normal;
+}
+/* ------------ first paragraph of  left part of my education  ------------------- */
+.workExperience .workExperienceContainer .workExperience-info  .experienceInfoPara1 ,
+.workExperience .workExperienceContainer .workExperience-info  .experienceInfoPara2
+{
+	margin-bottom: 5%;
+	font-size: 15.5px;
+	color:#888;
+}
+.workExperience .workExperienceContainer .experience-fields
+{
+	padding-top:45px;
+	padding-left:20px;
+	box-sizing: border-box;
+}
+
+.workExperience .workExperienceContainer .experience-fields  .field1 .field1H2 ,
+.workExperience .workExperienceContainer .experience-fields  .field2 .field2H2 ,
+.workExperience .workExperienceContainer .experience-fields  .field3 .field3H2
+{
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom:8px;
+}
+.workExperience .workExperienceContainer .experience-fields .field1 .field1Date ,
+.workExperience .workExperienceContainer .experience-fields .field2 .field2Date ,
+.workExperience .workExperienceContainer .experience-fields .field3 .field3Date
+{
+	color: #bbb;
+	margin-bottom: 8px;	
+}
+.workExperience .workExperienceContainer .experience-fields .field1 .field1Date span ,
+.workExperience .workExperienceContainer .experience-fields .field2 .field2Date span ,
+.workExperience .workExperienceContainer .experience-fields .field3 .field3Date span
+{
+	color: #444;
+}
+
+.workExperience .workExperienceContainer .experience-fields .field1 .field1Para ,
+.workExperience .workExperienceContainer .experience-fields .field2 .field2Para ,
+.workExperience .workExperienceContainer .experience-fields .field3 .field3Para
+{
+	margin-top: 20px;
+	margin-bottom:40px;
+	color:#888;
+	line-height: 1.5;
+}
+.workExperience .workExperienceContainer .experience-fields .field1 button ,
+.workExperience .workExperienceContainer .experience-fields .field2 button , 
+.workExperience .workExperienceContainer .experience-fields .field3 button 
+{
+	width: 80px;
+	height:35px;
+	padding:8px;
+	box-sizing: border-box;
+	margin-bottom:15px;
+	background-color: #2DCC70;
+	color: #fff;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+.workExperience .workExperienceContainer .experience-fields .field1 button:hover ,
+.workExperience .workExperienceContainer .experience-fields .field2 button:hover , 
+.workExperience .workExperienceContainer .experience-fields .field3 button:hover
+{
+	border : 1px solid #2DCC70;
+	box-sizing: border-box;
+	color: #2DCC70;
+	background:none;
+}
+.workExperience .workExperienceContainer .experience-fields .field1Para
+{
+	margin-top:15px;
+}
+/* /////////////////////////////////////////////////////////// join stone  section ///////////////////////////////////////////////////////////// */
+.joinStone
+{
+	width: 100%;
+	height: auto;
+	padding:50px 10px ;
+	/* border: 2px solid #00f; */
+	box-sizing: border-box;
+	background-color: #f2f2f2 ;
+}
+.joinStone .joinStoneContainer
+{
+	width: 85%;
+	margin: auto;
+	text-align: center;
+}
+.joinStone .joinStoneContainer q
+{
+	color:#555;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.5;
+}
+.joinStone .joinStoneContainer .joinStoneH3
+{
+	text-transform: uppercase;
+	font-size: 25px;
+	margin-top:25px;
+	margin-bottom:20px;
+	color:#555;
+}
+.joinStone .joinStoneContainer .joinStoneBullets
+{
+	display: block;
+	/* border: 2px solid #0f0; */
+	box-sizing: border-box;
+}
+.joinStone .joinStoneContainer .joinStoneBullets span
+{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #2DCC70;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+.joinStone .joinStoneContainer .joinStoneBullets span.active
+{
+	background-color:#2DCC70;	
+}
+.joinStone .joinStoneContainer .joinStoneBullets span:hover
+{
+	background-color:#2DCC70;
+}
+/*  /////////////////////////////////////////////////////////// portfolio  section ///////////////////////////////////////////////////////////// */
+.portfolio
+{
+	width: 100%;
+	height: auto;
+	/* border: 2px solid #00f; */
+	box-sizing: border-box;
+	text-align: center;
+}
+.portfolio .portfolioContainer
+{
+	width: 85%;
+	height: auto;
+	margin: 50px auto;
+	/* border: 2px solid #0ff; */
+	box-sizing: border-box;
+}
+.portfolio .portfolioContainer .portfolioH2
+{
+	font-size: 40px;
+	text-transform: capitalize;
+	/*border: 2px solid #0ff;*/
+	box-sizing: border-box;
+	padding-top: 50px;
+	padding-bottom:  20px;
+}
+.portfolio .portfolioContainer .portfolioPara
+{
+	font-size:14px;
+	line-height: 1.6;
+	color: #666;
+}
+.portfolio .portfolioContainer .portfolioImagesContiner
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	/* border: 2px solid #f0f; */
+	box-sizing: border-box;
+	margin-top:25px;
+}
+.portfolio .portfolioContainer .portfolioImagesContiner .imageContainer
+{
+	position: relative;
+	width: 24%;
+	height: auto;
+	float: left;
+	margin-left:0.5%;
+	margin-right:0.5%;
+	margin-top: 0.5%;
+	margin-bottom:0.5%;
+}
+.portfolio .portfolioContainer .portfolioImagesContiner .imageContainer img
+{
+	width: 100%;
+}
+.portfolio .portfolioContainer .portfolioImagesContiner .imageContainer .overlay button
+{
+	display: none;
+}
+.portfolio .portfolioContainer .portfolioImagesContiner .imageContainer:hover .overlay
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+
+}
+/*  12div من ال  div علي اي  hover لما اعمل  */
+.portfolio .portfolioContainer .portfolioImagesContiner .imageContainer:hover .overlay button
+{
+	display: block;
+	width: 90px;
+	height: 40px;
+	margin: 30% auto;
+	cursor: pointer;
+	background:none;
+	color:#fff;
+	border: 2px solid #2DCC70;
+	box-sizing: border-box;
+	outline: 0;
+}
+/*  /////////////////////////////////////////////////////////// contact us  section ///////////////////////////////////////////////////////////// */
+.contactUs
+{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	/* border: 2px solid #0f0; */
+	box-sizing: border-box; 
+	background-color:#252f31;
+}
+.contactUs .contactUsContainer
+{
+	width: 85%;
+	height: auto;
+	margin:auto;
+	/* border: 2px solid #00f; */
+	box-sizing: border-box;
+	margin-top: 50px;
+}
+.contactUs .contactUsContainer .contactUs-info ,
+.contactUs .contactUsContainer .contactUs-form 
+{
+	float: left;
+	/* border: 2px solid #f0f; */
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+.contactUs .contactUsContainer .contactUs-info 
+{
+	width: 55%;
+}
+.contactUs .contactUsContainer .contactUs-form 
+{
+	width: 45%;
+}
+/* -------------------------- left part : contact us information -------------------------- */
+.contactUs .contactUsContainer .contactUs-info .contactUsH2
+{
+	color:#fff;
+	text-transform: capitalize;
+	font-size: 30px;
+}
+.contactUs .contactUsContainer .contactUs-info .contactUsPara1 ,
+.contactUs .contactUsContainer .contactUs-info .contactUsPara2 
+{
+	color:#6A6E71;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.6;
+	/* border: 2px solid #fff; */
+	box-sizing: border-box;	
+}
+.contactUs .contactUsContainer .contactUs-info .contactUsPara2 
+{
+	width: 100%;
+	/* border: 2px solid #000; */
+	box-sizing: border-box;	
+}
+.contactUs .contactUsContainer .contactUs-info .contactUsPara3  ,
+.contactUs .contactUsContainer .contactUs-info .contactUsPara4 
+{
+	display: block;
+	width: 100%;
+	color: #6A6E71;
+	margin-bottom: 15px;
+	/* border: 2px solid #0ff; */
+	box-sizing: border-box;	
+}
+.contactUs .contactUsContainer .contactUs-info .contactUsPara3 span  ,
+.contactUs .contactUsContainer .contactUs-info .contactUsPara4 span
+{
+	color: #fff;
+	text-transform: capitalize;
+}
+/* -------------------------- right part : contact us form -------------------------- */
+.contactUs-form
+{
+	box-sizing: border-box;
+	padding-top:40px;
+	padding-left:10px;
+}
+.contactUs-form form label 
+{
+	text-transform: capitalize;
+	display: block; /* يظهر في سطر لوحده  label عشان ال */
+	color:#D1D6DA; /* label  لون النص اللي موجود في ال   */
+	margin:10px 0px ; /* وفوقه تساوي عشرة بيكسل والمسافة اللي علي اليمين والشمال بتساوي صفر  label  المسافة اللي تحت ال  */
+}
+.contactUs-form form  input[type=text] ,
+.contactUs-form form textarea
+{
+	display: block;
+	width:100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding:2%;
+	margin-bottom: 20px ;
+    background-color:#4B5557;
+	color: #fff;
+	outline:0;
+	border: 0;
+}
+.contactUs-form form textarea
+{
+   background-color:#4B5557;
+   padding:10px;
+   color:#fff;
+   height:350px;
+}
+.contactUs-form form  input[type=text]:focus ,
+.contactUs-form form  textarea:focus 
+{
+	border: 1px solid #fff;
+	border-radius:4px;
+}
+.contactUs-form form  input[type=submit]
+{
+	width: 110px ;
+	height: 40px;
+	padding: 10px;
+	text-transform: capitalize;
+    background-color:#191E22;
+	color: #fff;
+	border:0;
+	outline: 0;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.3s ease-in-out;
+}
+.contactUs-form form  input[type=submit]:hover
+{
+	background-color:#fff;
+	color: #191E22;
+}
+/*  /////////////////////////////////////////////////////////// footer  section ///////////////////////////////////////////////////////////// */
+.footer
+{
+	width: 100%;
+	height: auto;
+	background-color:#191E22;
+    color:#6A6E71;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.footer p
+{
+	font-size:22px;
+	text-transform: capitalize;
+}
+.footer  .footerIcons
+{
+	/* border: 2px solid #f00; */
+	margin-top: 10px;
+}
+.footer  .footerIcons ul
+{
+	list-style: none;
+}
+.footer  .footerIcons ul li 
+{
+	display: inline-block;
+	margin-right:10px;
+	cursor: pointer;
+}
+.footer  .footerIcons ul li i
+{
+	font-size: 25px;
+}
+.footer  .footerIcons ul li i.facebookIcon ,
+.footer  .footerIcons ul li i.linkedIcon
+{
+  	color:#3b5998;	
+}
+.footer  .footerIcons ul li i.twitterIcon 
+{
+  	color:#498cbf;	
+}
+.footer  .footerIcons ul li i.googlePlusIcon 
+{
+  	color:#cc2127;	
+}
+.footer  .footerIcons ul li i.whatsIcon 
+{
+  	color:#2DCC70;	
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ media query @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+/* /////////////////////////////////////////// home section ////////////////////////////////////////// */
+@media (min-width:0px) and (max-width:1081px)
+{
+	/* ------------------------------ home section --------------------------------- */
+	.homeClass
+	{
+		background-position: center;
+	}
+	.homeClass .homeContainer .homeH2
+	{
+		font-size: 23px;	
+	}
+	/* ------------------------------ navbar section --------------------------------- */
+	.navbarClass .navbarContainer .logo ,
+	.navbarClass .navbarContainer .links
+	{
+		width: 100%;
+		float: none;
+	}
+	.navbarClass .navbarContainer .links .ul-list
+	{
+		display: none;
+	}
+	.navbarClass .navbarContainer .links .ul-list li
+	{
+		display: block;
+		width: 100%;
+	}
+	/* -------------------------------- blog section -------------------------------- */
+	.blogClass  .blogContainer .blog1 , 
+	.blogClass  .blogContainer .blog2 , 
+	.blogClass  .blogContainer .blog3  
+	{
+		width:48%;
+		float: left;
+		height: auto;
+		margin-top:2%;
+		margin-left:2%;
+	}
+	/* -------------------------------- about section -------------------------------- */
+	
+/* left part of about section : about image , right part of about section : about info [ header , paragraph , fields ]   */
+	.aboutClass .aboutImg ,
+	.aboutClass	.aboutInfo
+	{
+		width: 100%;
+		float: none;	
+		height:auto;
+		overflow: hidden;
+	}
+	.aboutClass .aboutImg img
+	{
+		width: 100%;
+		height:auto;
+	}
+	/* common properities of the four icons of the four fields */
+	/* first part :  icons of about fields */
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 i , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 i , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 i , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 i
+	{
+		font-size:42px;
+	}
+	/* common properities of the four h4 of the four sub-fields */
+	/* sub-fields p */
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 .about-subField1 h4 , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 .about-subField2 h4 , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 .about-subField3 h4 , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 .about-subField4 h4 
+	{
+		font-size:15px;
+	}
+	/* common properities of the four p of the four sub-fields */
+	/* sub-fields p */
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField1 .about-subField1 p , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField2 .about-subField2 p , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField3 .about-subField3 p , 
+	.aboutClass   .aboutInfo    .aboutInfoFields   .aboutField4 .about-subField4 p  
+	{
+		font-size: 15px;
+	}
+	/* /////////////////////////////////////////// my skills section //////////////////////////////////////// */
+	/* common properities of left and right part of skills section : skills information */
+	.mySkills .skillsContainer  .skills-info , .mySkills .skillsContainer  .skills-statistics
+	{
+		width: 100%;
+		float: none;
+	}
+	/* left part of skills section : skills information */
+	.mySkills .skillsContainer  .skills-info 
+	{
+		text-align: center;
+	}
+	/* button of left part of skills section : skills information */
+	.mySkills .skillsContainer  .skills-info  .skillsBtn
+	{
+		margin:20px auto;
+	}
+		.mySkills .skillsContainer  .skills-info  .skillsPara1
+	{
+		margin-bottom: 0;
+	}
+	/* right part of skills section : skills statistics */
+	.mySkills .skillsContainer  .skills-statistics
+	{
+		/* container عشان الاحصائيات تبدا من بداية الناحية الشمال بتاع ال */
+		padding: 0;
+	}
+	/* /////////////////////////////////////////////////////////// Education section ///////////////////////////////////////////////////////////// */
+
+	/* common properities of the left and right part of my Education section */
+	.myEducation .myEducationContainer .myEducation-info , 
+	.myEducation .myEducationContainer .education-fields
+	{
+		width: 100%;
+		float: none;
+	}
+	.myEducation .myEducationContainer .myEducation-info  
+	{
+		text-align: center;
+	}
+
+	/* ------------ first paragraph of  left part of my education  ------------------- */
+	.myEducation .myEducationContainer .myEducation-info .educationInfoPara1 ,
+	.myEducation .myEducationContainer .myEducation-info .educationInfoPara2
+	{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	/* /////////////////////////////////////////////////////////// work Experience section ///////////////////////////////////////////////////////////// */
+	
+	/* common properities of the left and right part of my Education section */
+	.workExperience .workExperienceContainer .workExperience-info , 
+	.workExperience .workExperienceContainer .experience-fields
+	{
+		width: 100%;
+		float: none;
+	}
+	.workExperience .workExperienceContainer .workExperience-info
+	{
+		text-align: center;
+	}
+	/* ------------ first and second paragraph of  left part of my education  ------------------- */
+	.workExperience .workExperienceContainer .workExperience-info  .experienceInfoPara1 ,
+	.workExperience .workExperienceContainer .workExperience-info  .experienceInfoPara2
+	{
+		/*  يكونوا ملتصقين ببعض  two paragraph  عشان ال */
+		margin-top: 0;
+		margin-bottom: 0;
+		
+	}
+/*  /////////////////////////////////////////////////////////// portfolio  section ///////////////////////////////////////////////////////////// */
+	.portfolio .portfolioContainer .portfolioImagesContiner .imageContainer
+	{
+		width: 49%;
+		margin-left:0.5%;
+		margin-right:0.5%;
+		margin-top: 0.5%;
+		margin-bottom:0.5%;
+	}
+/*  /////////////////////////////////////////////////////////// contact us  section ///////////////////////////////////////////////////////////// */
+	.contactUs .contactUsContainer .contactUs-info ,
+	.contactUs .contactUsContainer .contactUs-form 
+	{
+		width:100%;
+		float: none;	
+	}
+	.contactUs .contactUsContainer .contactUs-form 
+	{
+		padding: 0;
+	}
+}
+@media (min-width:1082px)
+{
+	/* ------------------------------ navbar section --------------------------------- */
+	/* ================== hide navbar icon ======================= */
+	.navbarClass .navbarContainer .labelClass
+	{
+		display: none;
+	}
+}
